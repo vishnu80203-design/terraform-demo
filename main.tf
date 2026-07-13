@@ -1,4 +1,4 @@
-resource "azurerm_resource_group" "rg" {
-  name     = "demo-rg"
-  location = "East US"
+resource "azurerm_resource_group" "jenkins_rg" {
+  name     = "myJenkinsResourceGroup"
+  location = "eastus"
 }
