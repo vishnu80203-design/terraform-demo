@@ -101,19 +101,16 @@ resource "aws_resourcegroups_group" "jenkins_group" {
         {
           Key    = "Project"
           Values = ["Jenkins-Test"]
-{
-                  Key    = "Project"
-                  Values = ["Jenkins-Test"]
-                }
-              ]
-            })
-          }
         }
+      ]
+    })
+  }
+}
 
 # 8. S3 Bucket for Small Storage
 resource "aws_s3_bucket" "jenkins_storage_bucket" {
   bucket = "vishnu-jenkins-storage-80203" # This must be globally unique
-  
+
   tags = {
     Name    = "Jenkins-Storage-Bucket"
     Project = "Jenkins-Test"
