@@ -9,7 +9,7 @@ pipeline {
         stage('Terraform Execution') {
             steps {
                 // Injects your AWS credentials securely into the environment
-                withCredentials([aws(credentialsId: 'aws-jenkins-pipeline-creds', 
+                withCredentials([aws(credentialsId: 'AWS creds', 
                                      accessKeyVariable: 'AWS_ACCESS_KEY_ID', 
                                      secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')]) {
                     
