@@ -4,6 +4,6 @@ resource "aws_vpc" "jenkins_vpc" {
   enable_dns_hostnames = true
 
   tags = {
-    Name = "Jenkins-AWS-Test-VPC"
+    Name = "Jenkins_AWS_VPC"
   }
 }
